@@ -57,12 +57,14 @@ export default function NewIncident(){
 
               <form onSubmit = {handlerNewIncident}>
                 <input 
+                required
                 placeholder="Titulo do Caso" 
                 value={title}
                 onChange = {e => setTitle(e.target.value)}
                 
                 />
                 <textarea 
+                required
                 placeholder="Descrição"
                 
                 value={description}
@@ -70,7 +72,7 @@ export default function NewIncident(){
                 />
                
                 <input 
-                
+                required
                 placeholder="Valor em Reais" 
                 value={value}
                 onChange = {e => setValue(e.target.value)}
